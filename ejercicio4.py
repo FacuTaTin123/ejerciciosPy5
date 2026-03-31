@@ -14,7 +14,7 @@ contraseña = input("Crea una contraseña: ")
 if len(contraseña) >= 8:
     list(contraseña)
     for i in contraseña:
-            if i.isupper() == True and contraseña.isalnum() == False:    
+            if i.isupper() == True and i.islower() == True and contraseña.isalnum() == False:    
                     print('buena contraseña')
                     break
                 
